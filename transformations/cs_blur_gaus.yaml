@@ -1,0 +1,67 @@
+train:
+  augs:
+  - class_name: albumentations.HorizontalFlip
+    params:
+      p: 0.5
+  - class_name: albumentations.RandomSizedCrop
+    params:
+      min_max_height:
+        - 512
+        - 1024
+      w2h_ratio: 2
+      height: 512
+      width: 1024
+      always_apply: True
+  - class_name: albumentations.augmentations.blur.transforms.GaussianBlur
+    params:
+      blur_limit:
+        - 3
+        - 5
+      always_apply: True
+  - class_name: albumentations.Normalize
+    params:
+      mean:
+        - 0.485
+        - 0.456
+        - 0.406
+      std:
+        - 0.229
+        - 0.224
+        - 0.225
+  - class_name: albumentations.pytorch.transforms.ToTensorV2
+    params:
+      p: 1.0
+valid:
+  augs:
+    - class_name: albumentations.augmentations.geometric.resize.Resize
+      params:
+        height: 512
+        width: 1024
+    - class_name: albumentations.Normalize
+      params:
+        mean:
+          - 0.485
+          - 0.456
+          - 0.406
+        std:
+          - 0.229
+          - 0.224
+          - 0.225
+    - class_name: albumentations.pytorch.transforms.ToTensorV2
+      params:
+        p: 1.0
+test:
+  augs:
+    - class_name: albumentations.Normalize
+      params:
+        mean:
+          - 0.485
+          - 0.456
+          - 0.406
+        std:
+          - 0.229
+          - 0.224
+          - 0.225
+    - class_name: albumentations.pytorch.transforms.ToTensorV2
+      params:
+        p: 1.0
