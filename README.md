@@ -32,9 +32,9 @@ As they directly contain our used arguments for the Albumentations transformatio
 
 # Checkpoints
 The checkpoints for ResNet50 trained with various SSL methods can be found in their respective repositories:
--  [MoCo v3](github.com/facebookresearch/moco-v3}{github.com/facebookresearch/moco-v3)
--  [DINO](https://github.com/facebookresearch/dino}{github.com/facebookresearch/dino)
--  [Barlow Twins](https://github.com/facebookresearch/barlowtwins}{github.com/facebookresearch/barlowtwins)
+-  [MoCo v3](https://github.com/facebookresearch/moco-v3)
+-  [DINO](https://github.com/facebookresearch/dino)
+-  [Barlow Twins](https://github.com/facebookresearch/barlowtwins)
 -  [SwAV](https://github.com/facebookresearch/swav)
 
 For ErfNet trained with MoCo v3 and DINO the checkpoints can be found here: https://drive.google.com/drive/folders/1HH4F7gMm4FxqyZcgNBuwicrCFb0r40mh?usp=sharing.
