@@ -2,7 +2,7 @@
 
 # Principles of Forgetting in Domain-Incremental Semantic Segmentation in Adverse Weather Conditions
 
-[![Paper](https://img.shields.io/badge/arXiv-xxxx.xxxx-brightgreen)]()
+[![Paper](https://img.shields.io/badge/arXiv-2303.14115-brightgreen)](https://arxiv.org/abs/2303.14115)
 [![Conference](https://img.shields.io/badge/CVPR-2023-blue)]()
 
 </div>
